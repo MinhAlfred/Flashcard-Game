@@ -195,7 +195,7 @@ const HistoryPanel = ({ isOpen, onClose, onSelectAnalysis }) => {
         </div>
 
         {/* Content */}
-        <div className="p-6 overflow-y-auto max-h-[calc(90vh-200px)]">
+        <div className="p-6 overflow-y-auto max-h-[calc(90vh-200px)] custom-scrollbar">
           {activeTab === 'history' ? (
             <>
               {/* Search and Actions */}
@@ -363,7 +363,7 @@ const HistoryPanel = ({ isOpen, onClose, onSelectAnalysis }) => {
                   {Object.keys(stats.dailyCount).length > 0 && (
                     <div className="bg-white/5 rounded-lg p-4 border border-white/10">
                       <h3 className="text-white/80 font-medium mb-4">Hoạt động theo ngày</h3>
-                      <div className="space-y-2 max-h-40 overflow-y-auto">
+                      <div className="space-y-2 max-h-40 overflow-y-auto custom-scrollbar">
                         {Object.entries(stats.dailyCount)
                           .sort(([a], [b]) => new Date(b) - new Date(a))
                           .slice(0, 10)

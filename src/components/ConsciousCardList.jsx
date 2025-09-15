@@ -6,7 +6,7 @@ const ConsciousCardList = ({ cards, selectedCard, onSelectCard }) => {
       <h2 className="text-2xl font-bold text-white text-center mb-4 card-slide-in">
         🧠 Thẻ Ý thức
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-96 overflow-y-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-96 overflow-y-auto custom-scrollbar">
         {cards.map((card, index) => (
           <div
             key={card.id}

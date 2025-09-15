@@ -117,7 +117,7 @@ const AIAnalysisGame = ({ onBack }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 p-6">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-purple-900 p-6">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
@@ -167,7 +167,7 @@ const AIAnalysisGame = ({ onBack }) => {
               <span className="font-medium">Sử dụng Google Gemini 2.0 Flash AI</span>
             </div>
             <p className="text-green-200/80 text-sm">
-              API key đã được cấu hình sẵn trong file .env. Gemini 2.0 Flash cung cấp phân tích chất lượng cao, nhanh chóng và hoàn toàn miễn phí.
+             Đây là trò chơi đơn giản sử dụng AI để phân tích mối quan hệ giữa vật chất và ý thức.
             </p>
           </div>
         </div>
@@ -330,8 +330,7 @@ const AIAnalysisGame = ({ onBack }) => {
                 
                 <div className="bg-gray-500/20 p-3 rounded-lg border-l-4 border-gray-400">
                   <div className="text-gray-200 text-sm">
-                    🤖 Phân tích bởi: {analysisResult.provider === AI_PROVIDERS.GEMINI ? 'Google Gemini' : 'OpenAI GPT'} | 
-                    ⏰ {new Date(analysisResult.timestamp).toLocaleString('vi-VN')}
+                    Phân tích bởi: Google Gemini 2.0 Flash
                   </div>
                 </div>
               </div>

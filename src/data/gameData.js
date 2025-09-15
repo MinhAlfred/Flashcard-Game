@@ -26,8 +26,8 @@ export const consciousCards = [
 export const GAME_CONFIG = {
   CORRECT_SCORE: 10,
   WRONG_PENALTY: 2,
-  AUTO_NEXT_DELAY: 2000,
-  FEEDBACK_DURATION: 3000
+  AUTO_NEXT_DELAY: 10000,
+  FEEDBACK_DURATION: 5000
 };
 
 // Game status enum
