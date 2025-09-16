@@ -149,29 +149,29 @@ const HistoryPanel = ({ isOpen, onClose, onSelectAnalysis }) => {
 
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden shadow-2xl border border-white/10">
+      <div className="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden shadow-2xl border border-gray-200">
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-white/10">
+        <div className="flex items-center justify-between p-6 border-b border-gray-200">
           <div className="flex items-center gap-3">
-            <History className="text-blue-400" size={24} />
-            <h2 className="text-2xl font-bold text-white">Lịch Sử Phân Tích</h2>
+            <History className="text-blue-600" size={24} />
+            <h2 className="text-2xl font-bold text-gray-900">Lịch Sử Phân Tích</h2>
           </div>
           <button
             onClick={onClose}
-            className="p-2 rounded-lg hover:bg-white/10 transition-colors text-white/70 hover:text-white"
+            className="p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-600 hover:text-gray-900"
           >
             <X size={20} />
           </button>
         </div>
 
         {/* Tabs */}
-        <div className="flex border-b border-white/10">
+        <div className="flex border-b border-gray-200">
           <button
             onClick={() => setActiveTab('history')}
             className={`px-6 py-3 font-medium transition-colors ${
               activeTab === 'history'
-                ? 'text-blue-400 border-b-2 border-blue-400'
-                : 'text-white/70 hover:text-white'
+                ? 'text-blue-600 border-b-2 border-blue-600'
+                : 'text-gray-600 hover:text-gray-900'
             }`}
           >
             <div className="flex items-center gap-2">
@@ -183,8 +183,8 @@ const HistoryPanel = ({ isOpen, onClose, onSelectAnalysis }) => {
             onClick={() => setActiveTab('stats')}
             className={`px-6 py-3 font-medium transition-colors ${
               activeTab === 'stats'
-                ? 'text-blue-400 border-b-2 border-blue-400'
-                : 'text-white/70 hover:text-white'
+                ? 'text-blue-600 border-b-2 border-blue-600'
+                : 'text-gray-600 hover:text-gray-900'
             }`}
           >
             <div className="flex items-center gap-2">
